@@ -11,14 +11,14 @@ import com.homedepot.ta.aa.crypto.Crypto;
 public class Main {
     public static void main(final String args[]) {
 
-        System.out.println(decryptString("ROQGbwIk0Dcxh8XDppNVBg=="));
+        System.out.println(decryptString(""));
     }
 
     static String decryptString(final String value) {
         try {
             return Crypto.decrypt(value);
         } catch (java.lang.IllegalStateException e) {
-            final String msg = "The password in the CUPS definitons does not appear to be encrypted";
+            final String msg = "";
             throw new IllegalStateException(msg, e);
         }
     }
